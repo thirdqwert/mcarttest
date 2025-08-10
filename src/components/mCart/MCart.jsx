@@ -2,9 +2,11 @@ import s from './MCart.module.scss'
 import marrigaCart from '../../assets/img/cart.png'
 const MCart = () => {
     return (
-        <div className={s.marriage__cart} data-aos="fade-up" data-aos-duration={1000}>
-            <img src={marrigaCart} alt="" />
-        </div>
+        <>
+            <div className={s.marriage__cart} data-aos="fade-up" data-aos-duration={1000}>
+                <img src={marrigaCart} alt="" />
+            </div>
+        </>
     )
 }
 

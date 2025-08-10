@@ -1,0 +1,75 @@
+.location {
+    padding-top: 150px;
+
+    .texts {
+        padding-bottom: 30px;
+    }
+
+    p {
+        font-size: 48px;
+        text-align: center;
+        color: #000;
+        text-align: center;
+        padding: 0 162px;
+    }
+
+    span {
+        display: block;
+        font-family: 'TheArtist';
+        font-size: 96px;
+        color: #a0000b;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    a {
+        font-size: 48px;
+        text-align: center;
+        color: #fff;
+        border: 3px solid #000;
+        max-width: 367px;
+        width: 100%;
+        text-decoration: none;
+        margin: 0 auto;
+        display: block;
+        background: #a0000b;
+    }
+
+    @media (max-width:1080px) {
+        padding-top: 13vw;
+
+        p {
+            font-size: 4vw;
+            padding: 0 14vw;
+        }
+
+        span {
+            font-size: 8vw;
+            line-height: 5vw;
+
+        }
+
+        a {
+            font-size: 4vw;
+            width: 30vw;
+        }
+    }
+
+    @media (max-width:575px) {
+        p {
+            font-size: 7vw;
+            padding: 0 7vw;
+        }
+
+        span {
+            font-size: 14vw;
+            line-height: 11vw;
+
+        }
+
+        a {
+            font-size: 7vw;
+            width: 50vw;
+        }
+    }
+}

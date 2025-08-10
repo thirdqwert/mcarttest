@@ -1,0 +1,115 @@
+.text {
+    font-family: 'TheArtist';
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 128px;
+    color: #000;
+
+    @media (max-width:1080px) {
+        font-size: 12vw;
+    }
+
+    @media (max-width:575px) {
+        font-size: 16vw;
+    }
+}
+
+
+
+
+
+.days {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+
+    .heart__img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.day {
+    border: #000 3px solid;
+    width: 100%;
+
+    &:nth-of-type(2) {
+        border-right: none;
+        border-left: none;
+    }
+
+    .top__span {
+        padding: 0 0 10px;
+        border-bottom: 3px black solid;
+    }
+
+    p {
+        padding-top: 80px;
+        font-weight: 400;
+        font-size: 250px;
+        color: black;
+        text-align: center;
+        line-height: 164px;
+    }
+
+    span {
+        display: block;
+        font-weight: 400;
+        font-size: 40px;
+        color: #000;
+        text-align: center;
+        padding-top: 14px;
+        padding-bottom: 64px;
+
+    }
+
+
+    @media (max-width:1080px) {
+        .top__span {
+            padding-bottom: 1vw;
+        }
+
+        p {
+            line-height: 15vw;
+            font-size: 20vw;
+            padding-top: 8vw;
+        }
+
+        span {
+            font-size: 4vw;
+            padding-top: 1vw;
+            padding-bottom: 6vw;
+        }
+    }
+
+    @media (max-width:575px) {
+        span {
+            font-size: 5vw;
+        }
+    }
+}
+
+.year__text {
+    font-weight: 400;
+    font-size: 48px;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+
+    @media (max-width:1080px) {
+        font-size: 4vw;
+    }
+
+    @media (max-width:575px) {
+        font-size: 5vw;
+    }
+}

@@ -5,12 +5,10 @@ const Timer = () => {
 
     useEffect(() => {
         const targetDate = new Date("2025-09-10T00:00:00");
-        console.log(targetDate);
 
         const timer = setInterval(() => {
             const now = new Date();
             const difference = targetDate - now;
-            console.log(targetDate);
             if (difference <= 0) {
                 clearInterval(timer);
                 setTimeLeft({finished: true});

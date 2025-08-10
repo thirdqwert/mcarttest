@@ -37,6 +37,10 @@
         @media (max-width: 1080px) {
             max-width: 35vw;
         }
+
+        @media (max-width: 575px) {
+            max-width: 50vw;
+        }
     }
 
     &__text {
@@ -67,6 +71,17 @@
                 line-height: 4vw;
             }
         }
+
+        @media (max-width: 575px) {
+            p {
+                font-size: 7vw;
+            }
+
+            span {
+                font-size: 16vw;
+                line-height: 5vw;
+            }
+        }
     }
 
     &__hands {
@@ -80,5 +95,10 @@
         @media (max-width: 1080px) {
             padding-top: 2vw;
         }
+
+        @media (max-width: 575px) {
+            padding-top: 8vw;
+        }
+
     }
 }
