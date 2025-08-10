@@ -1,0 +1,84 @@
+.intro {
+    &__img {
+        max-width: 100%;
+        width: 100%;
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 38px;
+        margin-top: -115px;
+
+        @media (max-width: 1080px) {
+            gap: 1vw;
+            margin-top: -11vw;
+        }
+    }
+
+
+    &__names {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 447px;
+
+        img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 1080px) {
+            max-width: 35vw;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 48px;
+            color: #000;
+        }
+
+        span {
+            font-family: 'TheArtist';
+            font-size: 96px;
+            color: #a0000b;
+            display: block;
+            margin-left: 50%;
+            line-height: 50px;
+        }
+
+        @media (max-width: 1080px) {
+            p {
+                font-size: 4vw;
+            }
+
+            span {
+                font-size: 7vw;
+                line-height: 4vw;
+            }
+        }
+    }
+
+    &__hands {
+        width: 100%;
+        padding-top: 49px;
+
+        img {
+            width: 100%;
+        }
+
+        @media (max-width: 1080px) {
+            padding-top: 2vw;
+        }
+    }
+}

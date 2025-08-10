@@ -1,0 +1,19 @@
+.texts {
+    padding-top: 90px;
+    transform: rotate(5deg);
+
+    @media (max-width:1080px) {
+        padding-top: 10vw;
+    }
+}
+
+.text {
+    font-family: 'Bella';
+    font-weight: 400;
+    font-size: 180px;
+    color: #a0000b;
+
+    @media (max-width:1080px) {
+        font-size: 16vw;
+    }
+}
