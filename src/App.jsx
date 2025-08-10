@@ -10,10 +10,9 @@ const App = () => {
   useEffect(() => {
     Aos.init({
       duration: 400,
-      once: true,
+      once: false,
       easing: "ease-in-out"
     });
-    Aos.refresh()
   }, [])
 
   return (
