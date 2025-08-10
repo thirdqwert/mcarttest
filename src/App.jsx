@@ -13,6 +13,9 @@ const App = () => {
       once: false,
       easing: "ease-in-out"
     });
+    setTimeout(() => {
+      Aos.refresh();
+    }, 2000);
   }, [])
 
   return (
