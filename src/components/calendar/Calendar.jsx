@@ -18,8 +18,8 @@ const Calendar = () => {
                     </div>
                 ))
                 }
-                <div className={s.heart__img}>
-                    <img src={heart} alt="" />
+                <div className={s.heart__img} >
+                    <img src={heart} alt="" data-aos='zoom-in' data-aos-duration={800}/>
                 </div>
             </div>
             <p className={s.year__text}>2025 года</p>

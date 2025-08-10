@@ -6,6 +6,7 @@ import TextSlide from './components/textSlide/TextSlide'
 import MCart from './components/mCart/MCart'
 import Calendar from './components/calendar/Calendar'
 import Location from './components/location/Location'
+import Footer from './components/footer/Footer'
 const App = () => {
   useEffect(() => {
     Aos.init({
@@ -27,6 +28,7 @@ const App = () => {
         <MCart />
         <Calendar />
         <Location />
+        <Footer />
       </div>
     </>
   )

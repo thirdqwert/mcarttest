@@ -1,0 +1,100 @@
+footer {
+    padding-top: 10px;
+    .rings {
+        max-width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .frame {
+        position: relative;
+        max-width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .texts {
+        position: absolute;
+        bottom: 391px;
+
+        @media (max-width:1080px) {
+            bottom: 40vw;
+        }
+
+        @media (max-width:575px) {
+            p {
+                font-size: 7vw;
+                padding: 0 7vw;
+            }
+
+            span {
+                font-size: 14vw;
+                line-height: 11vw;
+            }
+
+            h2 {
+                font-size: 7vw;
+            }
+        }
+    }
+
+    p {
+        font-size: 48px;
+        text-align: center;
+        color: #000;
+        text-align: center;
+        padding: 0 211px;
+    }
+
+    span {
+        font-family: 'TheArtist';
+        font-size: 96px;
+        color: #a0000b;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    h2 {
+        padding-top: 10px;
+        font-size: 48px;
+        text-align: center;
+        color: #a0000b;
+    }
+
+    @media (max-width:1080px) {
+        p {
+            font-size: 4vw;
+            padding: 0 14vw;
+        }
+
+        span {
+            font-size: 8vw;
+            line-height: 5vw;
+
+        }
+
+        h2 {
+            font-size: 4vw;
+        }
+    }
+
+    @media (max-width:575px) {
+        p {
+            font-size: 7vw;
+            padding: 0 7vw;
+        }
+
+        span {
+            font-size: 14vw;
+            line-height: 11vw;
+        }
+
+        h2 {
+            font-size: 7vw;
+        }
+    }
+}
