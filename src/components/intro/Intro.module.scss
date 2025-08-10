@@ -2,7 +2,6 @@
     &__img {
         max-width: 100%;
         width: 100%;
-
         img {
             width: 100%;
             vertical-align: middle;
@@ -28,7 +27,8 @@
         flex-direction: column;
         width: 100%;
         max-width: 447px;
-
+        max-height: 240px;
+        height: 100%;
         img {
             width: 100%;
             vertical-align: middle;

@@ -13,6 +13,7 @@ const App = () => {
       once: true,
       easing: "ease-in-out"
     });
+    Aos.refresh()
   }, [])
 
   return (
