@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import s from './Timer.module.scss'
+import { useTranslation } from 'react-i18next';
 const Timer = () => {
     const [timeLeft, setTimeLeft] = useState(false);
-
+    const { t } = useTranslation()
     useEffect(() => {
         const targetDate = new Date("2025-09-14T18:00:00");
 
@@ -38,22 +39,22 @@ const Timer = () => {
 
                     <div className={s.timer__col}>
                         <p>{timeLeft == false ? '00' : timeLeft.days >= 10 ? timeLeft.days : `0${timeLeft.days}`}</p>
-                        <span>дней</span>
+                        <span>{t("days")}</span>
                     </div>
                     <p>:</p>
                     <div className={s.timer__col}>
                         <p>{timeLeft == false ? '00' : timeLeft.hours >= 10 ? timeLeft.hours : `0${timeLeft.hours}`}</p>
-                        <span>часов</span>
+                        <span>{t("hours")}</span>
                     </div>
                     <p>:</p>
                     <div className={s.timer__col}>
                         <p>{timeLeft == false ? '00' : timeLeft.minutes >= 10 ? timeLeft.minutes : `0${timeLeft.minutes}`}</p>
-                        <span>минут</span>
+                        <span>{t("min")}</span>
                     </div>
                     <p>:</p>
                     <div className={s.timer__col}>
                         <p>{timeLeft == false ? '00' : timeLeft.seconds >= 10 ? timeLeft.seconds : `0${timeLeft.seconds}`}</p>
-                        <span>cекунд</span>
+                        <span>{t("sec")}</span>
                     </div>
                 </div>
             </div>

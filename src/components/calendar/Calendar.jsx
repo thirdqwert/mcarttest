@@ -1,7 +1,10 @@
 import s from './Calendar.module.scss'
 import heart from '../../assets/img/heart_img.png'
-let days = [{ date: 13, name: 'суббота' }, { date: 14, name: 'воскресенье' }, { date: 15, name: 'понедельник' }]
+import { useTranslation } from 'react-i18next'
 const Calendar = () => {
+    const { t } = useTranslation()
+    const days = [{ date: 13, name: t("saturday") }, { date: 14, name: t("sunday") }, { date: 15, name: t("monday") }]
+
     return (
         <div className={s.calendar}>
             <p className={s.text}>save the date</p>
@@ -13,16 +16,16 @@ const Calendar = () => {
                         </div>
                         <div>
                             <p>{day.date}</p>
-                            <span>сентября</span>
+                            <span>{t("september")}</span>
                         </div>
                     </div>
                 ))
                 }
                 <div className={s.heart__img} >
-                    <img src={heart} alt="" data-aos='zoom-in' data-aos-duration={800}/>
+                    <img src={heart} alt="" data-aos='zoom-in' data-aos-duration={800} />
                 </div>
             </div>
-            <p className={s.year__text}>2025 года</p>
+            <p className={s.year__text}>2025 {t("year")}</p>
         </div>
     )
 }
