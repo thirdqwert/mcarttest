@@ -33,7 +33,7 @@ const Timer = () => {
 
     return (
         <>
-            <div className={s.timer} data-aos="fade-up">
+            <div className={s.timer}>
                 <div className={s.timer__content}>
 
                     <div className={s.timer__col}>

@@ -3,7 +3,7 @@ import heart from '../../assets/img/heart_img.png'
 let days = [{ date: 13, name: 'суббота' }, { date: 14, name: 'воскресенье' }, { date: 15, name: 'понедельник' }]
 const Calendar = () => {
     return (
-        <div className={s.calendar} data-aos='fade-up'>
+        <div className={s.calendar}>
             <p className={s.text}>save the date</p>
             <div className={s.days}>
                 {days.map((day, i) => (

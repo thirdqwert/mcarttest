@@ -2,9 +2,39 @@
     &__img {
         max-width: 100%;
         width: 100%;
+        position: relative;
+
         img {
             width: 100%;
             vertical-align: middle;
+        }
+    }
+
+    &__choose_lng {
+        display: flex;
+        flex-direction: row;
+        gap: 400px;
+        position: absolute;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+
+        p {
+            font-size: 36px;
+            color: #000;
+
+            @media (max-width: 1080px) {
+                font-size: 3vw;
+            }
+
+            @media (max-width: 575px) {
+                font-size: 3.5vw;
+            }
+        }
+
+        @media (max-width: 1080px) {
+            top: 20vw;
+            gap: 40vw;
         }
     }
 
@@ -29,17 +59,19 @@
         max-width: 447px;
         max-height: 240px;
         height: 100%;
+        z-index: 1;
+
         img {
             width: 100%;
             vertical-align: middle;
         }
 
         @media (max-width: 1080px) {
-            max-width: 35vw;
+            max-width: 34.5vw;
         }
 
         @media (max-width: 575px) {
-            max-width: 50vw;
+            max-width: 49.5vw;
         }
     }
 
@@ -63,23 +95,23 @@
 
         @media (max-width: 1080px) {
             p {
-                font-size: 4vw;
+                font-size: 3.5vw;
             }
 
             span {
-                font-size: 7vw;
-                line-height: 4vw;
+                font-size: 6.5vw;
+                line-height: 3.5vw;
             }
         }
 
         @media (max-width: 575px) {
             p {
-                font-size: 7vw;
+                font-size: 6.5vw;
             }
 
             span {
-                font-size: 16vw;
-                line-height: 5vw;
+                font-size: 15.5vw;
+                line-height: 4.5vw;
             }
         }
     }
@@ -88,7 +120,10 @@
         width: 100%;
         padding-top: 49px;
 
-        img {
+        // img {
+        //     width: 100%;
+        // }
+        video {
             width: 100%;
         }
 

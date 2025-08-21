@@ -32,24 +32,24 @@
         }
 
         p {
-            font-size: 7vw;
+            font-size: 6.5vw;
         }
 
         &__col {
             span {
-                font-size: 3vw;
+                font-size: 2.5vw;
             }
         }
     }
 
     @media (max-width: 575px) {
         p {
-            font-size: 12vw;
+            font-size: 11.5vw;
         }
 
         &__col {
             span {
-                font-size: 6vw;
+                font-size: 5.5vw;
             }
         }
     }

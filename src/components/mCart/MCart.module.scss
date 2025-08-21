@@ -1,20 +1,12 @@
 .marriage__cart {
-    padding-top: 172px;
     position: relative;
-
-
-
+    z-index: 1;
     img {
         width: 100%;
         vertical-align: middle;
 
-    @media (max-width:575px) {
-        transform: scale(1.3);
+        // @media (max-width:575px) {
+        //     transform: scale(1.3);
+        // }
     }
-    }
-
-    @media (max-width:1080px) {
-        padding-top: 15vw;
-    }
-
 }
